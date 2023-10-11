@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>formulaire de contact</title>
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="./images.png" alt="pingouin">
+        <nav class="navbarmain">
+          <ul class="navbar">
+            <li><a href="./profil.html">Profil</a></li>
+            <li><a href="./langages.html">Langages</a></li>
+            <li><a href="">Projets</a> 
+              <ul>
+                <li><a href="./mes projets perso.html">projets personnels</a></li>
+                <li><a href="./mes projets pro.html">projets professionnels</a></li>
+              </ul></li>
+          <li><a href="./mes_centres_d_interet.html">A propos</a></li>
+          <li><a href="./contactez-moi.html">contact</a></li>
+         </nav>
+      
+    </header>
+    <h1>Formulaire de contact</h1>
+    <form method="post" action="contact.jpg">
+      <label for="civilité">Vous êtes :</label><br />
+      <select name="civilité" id="civilité">
+        <option value="">--choisissez une option--</option>
+        <option value="homme">un homme</option>
+        <option value="femme">une femme</option>
+        <option value="indéterminé">non genré</option></select
+      ><br />
+      <label for="name">Prénom</label><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="jean"
+        required
+      /><br />
+      <label for="surname">Nom</label><br />
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Dupont"
+        required
+      /><br />
+      <label for="birthDate">Date de naissance</label><br />
+      <input type="date" name="birthDate" id="birthDate" required /><br />
+      <label for="e-mail">Email</label><br />
+      <input
+        type="email"
+        name="e-mail"
+        id="e-mail"
+        placeholder="jeandupont@toto.com"
+        required
+      /><br />
+      <label for="phoneNumber">téléphone</label><br />
+      <input
+        type="tel"
+        name="phoneNumber"
+        id="phoneNumber"
+        placeholder="0600000000"
+        required
+      /><br />
+      <label for="statut">Statut</label><br />
+      <select name="statut" id="statut" multiple size="8">
+        <option value="">--choisissez une option--</option>
+        <option value="novice">novice</option>
+        <option value="étudiant">étudiant</option>
+        <option value="développeur">développeur</option>
+        <option value="formateur">professeur</option>
+        <option value="fan de métal">fan de métal</option>
+        <option value="loulou">loulou</option>
+        <option value="dans la merde">dans la merde</option></select
+      ><br />
+      <label for="questions">Votre demande</label><br />
+      <textarea
+        name="questions"
+        id="questions"
+        cols="30"
+        rows="10"
+        placeholder="Posez ici votre question"
+        required
+      ></textarea
+      ><br />
+      <input type="checkbox" name="conditions" id="conditions" required /><label
+        for="conditions"
+        >J'accepte les conditions de ce site</label
+      >
+      <button type="submit">envoyer</button>
+    </form>
+  </body>
+  <footer>
+    <audio src="./13-LE TEMPS S ARRETE.mp3" controls>
+      le navigateur ne supporte pas le format de cette musique
+    </audio>
+  </footer>
+</html>
